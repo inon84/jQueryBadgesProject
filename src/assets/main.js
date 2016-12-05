@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.ajax({
+  jQuery.ajax({
     url: 'https://www.codeschool.com/users/Inon84.json',
     dataType: 'jsonp',
   })
