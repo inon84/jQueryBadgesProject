@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  jQuery.ajax({
+  $.ajax({
     url: 'https://www.codeschool.com/users/Inon84.json',
     dataType: 'jsonp',
   })
-  success: function(response) {
+  .done(function(response) {
     console.log("success");
     addCourses(response.courses.completed);
     console.log("response", response.courses.completed);
@@ -38,6 +38,5 @@ $(document).ready(function() {
   })
   .always(function() {
     console.log("complete");
-  });
-  */
+  });*/
 });
