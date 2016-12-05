@@ -3,7 +3,7 @@ $(document).ready(function() {
     url: 'https://www.codeschool.com/users/Inon84.json',
     dataType: 'jsonp',
   })
-  .done(function(response) {
+  success: function(response) {
     console.log("success");
     addCourses(response.courses.completed);
     console.log("response", response.courses.completed);
